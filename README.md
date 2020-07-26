@@ -1,8 +1,8 @@
 # bilibili2onedrive
 copyright@LuoRogers
 
-
-##请根据自身情况修改BiliDown.py和mail.py
+###自动缓存你的B站某一收藏夹视频到onedrive
+####请根据自身情况修改BiliDown.py和mail.py
 
 ##依赖库：you-get requests
 
