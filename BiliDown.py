@@ -1,4 +1,4 @@
-#记得修改55，62行为自己的信息
+#记得修改42，58，65行为自己的信息
 
 from requests import get
 import json 
@@ -39,7 +39,7 @@ def down(k):
     global v_dic
     dir = v_dic[k]
     old_dir = os.getcwd()
-    new_dir = r"/onedrive/pan/哔哩哔哩/{dir}".format(dir=dir.replace("/","|"))
+    new_dir = r"onedrive的挂载地址{dir}".format(dir=dir.replace("/","|"))
     p = getp(k)
     if not os.path.exists(new_dir):
         os.makedirs(new_dir)
@@ -54,6 +54,7 @@ def down(k):
             r = os.system(command)
     if  r == 0:
         print(k+"下载成功")
+        #如不需要邮件提醒功能，请删除下面一行。
         mail.sendmail("通知的邮件地址","BiliDown任务通知","「{k}」下载成功，请打开onedrive查看".format(k=v_dic[k]))
         os.chdir(old_dir)
     else:
