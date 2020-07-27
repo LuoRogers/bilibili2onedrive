@@ -3,6 +3,8 @@ copyright@LuoRogers
 
 ###自动缓存你的B站某一收藏夹视频到onedrive
 
+###使用前请先将onedrive挂载到服务器。
+
 ####请根据自身情况修改BiliDown.py和mail.py
 
 ##依赖库：you-get requests
